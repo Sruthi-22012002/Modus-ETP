@@ -13,4 +13,5 @@
 * High availability, scalability, and security considered in design
 
 ## Architecture diagram
-
+## Implementation
+[1. Create a Resource Group](
