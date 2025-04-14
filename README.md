@@ -14,4 +14,12 @@
 
 ## Architecture diagram
 ## Implementation
-[1. Create a Resource Group](
+[1. Create a Resource Group](https://github.com/Sruthi-22012002/Modus-ETP/blob/main/Create%20a%20Resource%20Group.md)
+[2. Create an Azure SQL Database](
+[3. Create the Web App (Azure App Service)](
+[4. Configure Auto-Scaling for App Service](
+[5. Set Up Azure Front Door](
+[7. Integrate with External APIs](
+[8. Set Up Azure Key Vault](
+[9. Enable Monitoring and Logging](
+[10. CI/CD Setup](
