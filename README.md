@@ -13,6 +13,7 @@
 * High availability, scalability, and security considered in design
 
 ## Architecture diagram
+> https://github.com/Sruthi-22012002/Modus-ETP/blob/main/Modus%20ETP.drawio
 ## Implementation
 1. [Create a Resource Group](https://github.com/Sruthi-22012002/Modus-ETP/blob/main/Create%20a%20Resource%20Group.md)
 2. [Create an Azure SQL Database](https://github.com/Sruthi-22012002/Modus-ETP/blob/main/Create%20an%20Azure%20SQL%20Database.md)
