@@ -1,9 +1,69 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
-  <diagram name="Page-1" id="57mKXsC_uq5vv_n9673D">
-    <mxGraphModel>
+  <diagram name="Azure DevOps Architecture" id="57mKXsC_uq5vv_n9673D">
+    <mxGraphModel dx="1044" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cxdAmIOA_4p706zGMcze-1" value="Client" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-2" value="Azure Front Door&#xa;(HTTPS, WAF)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-3" value="Azure Application Gateway&#xa;(SSL Termination, LB)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-4" value="Azure Kubernetes Service (AKS)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-5" value="Pods (Web Services)" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="320" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-6" value="Pod" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="cxdAmIOA_4p706zGMcze-5">
+          <mxGeometry x="10" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-7" value="Pod" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="cxdAmIOA_4p706zGMcze-5">
+          <mxGeometry x="85" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-8" value="Pod" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="cxdAmIOA_4p706zGMcze-5">
+          <mxGeometry x="160" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-9" value="Azure Private Link&#xa;(Managed Instance)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-10" value="Azure SQL Database&#xa;(Managed Instance)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="520" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-11" value="External Services via API Management" style="shape=swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="600" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-12" value="Azure API Management" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="cxdAmIOA_4p706zGMcze-11">
+          <mxGeometry x="10" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-13" value="Private Endpoints / VNET" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="cxdAmIOA_4p706zGMcze-11">
+          <mxGeometry x="140" y="30" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-1" target="cxdAmIOA_4p706zGMcze-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-2" target="cxdAmIOA_4p706zGMcze-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-3" target="cxdAmIOA_4p706zGMcze-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-4" target="cxdAmIOA_4p706zGMcze-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-5" target="cxdAmIOA_4p706zGMcze-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-9" target="cxdAmIOA_4p706zGMcze-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cxdAmIOA_4p706zGMcze-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="cxdAmIOA_4p706zGMcze-10" target="cxdAmIOA_4p706zGMcze-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
