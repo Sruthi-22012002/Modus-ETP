@@ -221,7 +221,8 @@ npm start
           * Check every: 1 minute
    * Details
      * Type alert messgae display name and alert name
-   * Review + create 
+   * Review + create
+   
 🖼️ **Azure Portal Screenshot:**
 
 <img src="https://github.com/user-attachments/assets/fbf15313-fc81-4924-9c93-e246fc1f07a4" alt="Alert" width="700"/>
